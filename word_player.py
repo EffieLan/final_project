@@ -67,10 +67,10 @@ class WordPlayer:
         for tip in tips:
             if length < len(tip):
                 length = len(tip)
-        print("+", "-" * (length + 3), "+", sep="")
+        print("+", "-" * (length + 2), "+", sep="")
         for tip in tips:
             print("|", tip.ljust(length), "|")
-        print("+", "-" * (length + 3), "+", sep="")
+        print("+", "-" * (length + 2), "+", sep="")
 
     def guess_word(self):
         self.reset()
